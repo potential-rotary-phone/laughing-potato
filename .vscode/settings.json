@@ -1,0 +1,17 @@
+{
+    "git.autofetch": true,
+    "gitdoc.enabled": true,
+    "gitdoc.autoCommitDelay": 60000,
+    "gitdoc.autoPullDelay": 0,
+    "gitdoc.autoPushDelay": 0,
+    "gitdoc.commitMessageFormat": "ccc, LLL d, y, h:mm a '+00:00'",
+    "files.insertFinalNewline": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "flake8.args": [
+        "--ignore=E203",
+        "--max-line-length=150"
+    ],
+    "mypy-type-checker.args": [
+        "var-annotated"
+    ],
+}

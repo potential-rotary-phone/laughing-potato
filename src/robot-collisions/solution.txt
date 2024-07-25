@@ -1,0 +1,11 @@
+Leetcode daily question solution July 13 2024 2751 Robot Collisions
+Intuition. To solve the problem of determining the health of surviving robots after all collisions, we need to consider the positions and directions of robots. Robots moving in the same direction will not collide, so we only need to handle collisions between robots moving towards each other.
+Approach. Initialize variables: Create a mapping from positions to their respective indices to keep track of original indices after sorting.
+Create a stack to keep track of robots' movements.
+Sort positions: Sort the positions to simulate the movement from left to right.
+Handle collision: If a robot moving left collides with a robot moving right, compare their healths:
+The robot with higher health will survive and lose 1 health.
+The robot with lower health will be removed.
+If both have the same health, both will be removed.
+Filter Survivors: Filter out robots with health greater than zero after processing all positions.
+Complexity. Time complexity: The time complexity of this solution is big O of n log n where n is the number of robots. This is because we are sorting the positions list which takes big O of n log n time. Space complexity: The space complexity is big O of n because we use a stack to track the robots moving to the right.

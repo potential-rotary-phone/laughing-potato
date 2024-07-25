@@ -1,0 +1,8 @@
+Intuition. Pour résoudre le problème de trouver une matrice où les sommes des lignes et des colonnes correspondent aux sommes des lignes et des colonnes données, nous pouvons appliquer l'algorithme glouton. La matrice est remplie cellule par cellule avec la valeur minimale entre les sommes courantes de sorte que les contraintes sont maintenues.
+Approche. Initialiser la matrice: Créer une matrice de zéros avec des dimensions basées sur les longueurs de la donnée `rowSum` et `colSum`.
+Iterer à travers la matrice : Faites défiler les lignes et les colonnes en utilisant deux pointeurs `row_index` et `col_index'.
+Définissez la valeur de la cellule au minimum des valeurs courantes `rowSum` et `colSum`.
+Soustraire cette valeur des valeurs correspondantes `rowSum` et `colSum`.
+Si le `rowSum` devient zéro, passez à la ligne suivante. Sinon, passez à la colonne suivante.
+Retourne la matrice: Retourne la matrice après avoir rempli toutes les cellules requises.
+Complexité. Complexité temporelle: La complexité temporale de cette solution est O de m fois n, où m est le nombre de lignes et n est le numéro de colonnes dans la matrice. C'est parce que nous répétons toutes les cellules de la matrice une fois pour attribuer des valeurs basées sur le minimum des sommes de ligne et de colonne actuelles. Complexité de l'espace : La complexité d'espace est grande O de m fois n aussi, car nous créons une matrice de la taille m de temps n pour stocker les valeurs.

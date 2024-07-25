@@ -1,0 +1,8 @@
+Iterate over the sorted positions
+Get the index of the current robot based on its position
+Check the direction of the current robot If the robot is moving to the right, push its index onto the stack
+If the robot is moving to the left, handle potential collisions
+Handle collisions: Get the last robot moving to the right and determine the outcome of the collision:
+If the current robot survives, decrease its health.
+If the right-moving robot survives, do the same thing and re-add the right-moving robot to the stack for potential further collisions.
+If both have the same health, both will be removed.

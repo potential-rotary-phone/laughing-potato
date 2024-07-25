@@ -1,0 +1,9 @@
+Leetcode daily question solution July 20 2024 1605 Find Valid Matrix Given Row and Column Sums
+Intuition. To solve the problem of finding a matrix where the sums of the rows and columns match given row and column sums, we can apply the greedy algorithm. The matrix is filled cell by cell with the minimum value between the current sums so that the constraints are maintained.
+Approach. Initialize the matrix: Create a matrix of zeros with dimensions based on the lengths of the given `rowSum` and `colSum`.
+Iterate through the matrix: Loop through the rows and columns using two pointers `row_index` and `col_index`.
+Set the cell value to the minimum of the current `rowSum` and `colSum`.
+Subtract this value from the corresponding `rowSum` and `colSum`.
+If the `rowSum` becomes zero, move to the next row. Otherwise, move to the next column.
+Return the matrix: Return the matrix after filling all required cells.
+Complexity. Time complexity: The time complexity of this solution is big O of m time n, where m is the number of rows and n is the number of columns in the matrix. This is because we iterate through all cells of the matrix once to assign values based on the minimum of the current row and column sums. Space complexity: The space complexity is big O of m time n as well, as we create a matrix of size m * n to store the values.
